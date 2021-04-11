@@ -18,7 +18,16 @@
 
 <main>
   <h1 class="visually-hidden">O'Clock App</h1>
-  <div id="oclock" role="timer" aria-live="polite" aria-atomic="true">
+  <div
+    id="visually-hidden-oclock"
+    class="visually-hidden"
+    role="timer"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    {hours}:{minutes}
+  </div>
+  <div id="visually-oclock" class="visually-oclock" aria-hidden="true">
     {hours}:{minutes}:{seconds}
   </div>
 </main>
@@ -31,8 +40,11 @@
     height: 100%;
   }
 
-  div {
-    font-size: 4em;
+  .visually-oclock {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
     font-variant-numeric: tabular-nums;
   }
 
