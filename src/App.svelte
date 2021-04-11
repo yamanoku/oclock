@@ -1,30 +1,56 @@
 <script lang="ts">
-  export let name: string;
+  import { onMount } from "svelte";
+  let time = new Date();
+
+  $: hours = String(time.getHours()).padStart(2, "0");
+  $: minutes = String(time.getMinutes()).padStart(2, "0");
+  $: seconds = String(time.getSeconds()).padStart(2, "0");
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      time = new Date();
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  });
 </script>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <h1 class="visually-hidden">O'Clock App</h1>
+  <div
+    id="visually-hidden-oclock"
+    class="visually-hidden"
+    role="timer"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    {hours}:{minutes}
+  </div>
+  <div id="visually-oclock" class="visually-oclock" aria-hidden="true">
+    {hours}:{minutes}:{seconds}
+  </div>
 </main>
 
 <style>
-main {
-  text-align: center;
-  padding: 1em;
-  max-width: 240px;
-  margin: 0 auto;
-}
-
-h1 {
-  color: #ff3e00;
-  text-transform: uppercase;
-  font-size: 4em;
-  font-weight: 100;
-}
-
-@media (min-width: 640px) {
   main {
-    max-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
-}
+
+  .visually-oclock {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
 </style>
