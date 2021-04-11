@@ -48,3 +48,7 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 ```js
 "start": "sirv public --single"
 ```
+
+## License
+
+MIT © [Okuto Oyama](https://yamanoku.net/)
