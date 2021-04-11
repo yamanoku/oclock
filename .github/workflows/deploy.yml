@@ -26,13 +26,13 @@ jobs:
     - name: npm ci and build
       run: |
         npm ci
-        npm build
+        npm run build
       env:
         CI: true
 
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.DEPLOY_TOKEN }}
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
         publish_dir: ./public
 
