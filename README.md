@@ -2,12 +2,18 @@
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
+## Screenshot
+
+| `prefers-color-scheme: light` | `prefers-color-scheme: dark` |
+| ----------------------------- | ---------------------------- |
+| ![Screen Shot prefers-color-scheme: light](https://user-images.githubusercontent.com/1996642/114294426-7f583500-9ad9-11eb-945a-7a11c35c53ff.png) | ![Screen Shot prefers-color-scheme: dark](https://user-images.githubusercontent.com/1996642/114294425-7c5d4480-9ad9-11eb-9238-99944a28e569.png) |
+
 ## Get started
 
 Install the dependencies...
 
 ```bash
-npm install
+npm ci
 ```
 
 ...then start [Rollup](https://rollupjs.org):
