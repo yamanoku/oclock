@@ -1,3 +1,5 @@
+<svelte:options tag="oclock-component" immutable={true} />
+
 <script lang="ts">
   import { onMount } from "svelte";
   let time = new Date();
@@ -16,30 +18,20 @@
   });
 </script>
 
-<main>
-  <h1 class="visually-hidden">O'Clock App</h1>
-  <div
-    id="visually-hidden-oclock"
-    class="visually-hidden"
-    role="timer"
-    aria-live="polite"
-    aria-atomic="true"
-  >
-    {hours}:{minutes}
-  </div>
-  <div id="visually-oclock" class="visually-oclock" aria-hidden="true">
-    {hours}:{minutes}:{seconds}
-  </div>
-</main>
+<div
+  id="visually-hidden-oclock"
+  class="visually-hidden-oclock"
+  role="timer"
+  aria-live="polite"
+  aria-atomic="true"
+>
+  {hours}:{minutes}
+</div>
+<div id="visually-oclock" class="visually-oclock" aria-hidden="true">
+  {hours}:{minutes}:{seconds}
+</div>
 
 <style>
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
   .visually-oclock {
     display: inline-flex;
     align-items: center;
@@ -48,9 +40,18 @@
     font-variant-numeric: tabular-nums;
   }
 
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+  .visually-hidden-oclock {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    opacity: 0;
+    overflow: hidden;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    visibility: visible;
   }
 </style>
