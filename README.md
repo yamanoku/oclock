@@ -8,6 +8,11 @@ This is a project template for [Svelte](https://svelte.dev) apps. It lives at ht
 | ----------------------------- | ---------------------------- |
 | ![Screen Shot prefers-color-scheme: light](https://user-images.githubusercontent.com/1996642/114294426-7f583500-9ad9-11eb-945a-7a11c35c53ff.png) | ![Screen Shot prefers-color-scheme: dark](https://user-images.githubusercontent.com/1996642/114294425-7c5d4480-9ad9-11eb-9238-99944a28e569.png) |
 
+## Contents
+
+- [O'clock App](https://yamanoku.net/oclock/)
+- [Seconds Only Version](https://yamanoku.net/oclock/seconds.html)
+
 ## Get started
 
 Install the dependencies...
