@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "21.0.1",
-    "@rollup/plugin-node-resolve": "13.0.5",
+    "@rollup/plugin-node-resolve": "13.0.6",
     "@rollup/plugin-typescript": "8.3.0",
     "@tsconfig/svelte": "2.0.1",
     "gh-pages": "3.2.3",
