@@ -38,6 +38,7 @@
     justify-content: center;
     font-size: 4.5rem;
     font-variant-numeric: tabular-nums;
+    user-select: none;
   }
 
   .visually-hidden-oclock {
