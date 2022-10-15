@@ -3,8 +3,8 @@
   "author": "yamanoku <0910yama@gmail.com>",
   "private": true,
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
     "validate": "svelte-check",
     "deploy": "gh-pages -d public -b gh-pages -m 'chore: deploy' -t"
