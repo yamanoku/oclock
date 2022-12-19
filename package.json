@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d public -b gh-pages -m 'chore: deploy' -t"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "23.0.5",
+    "@rollup/plugin-commonjs": "23.0.7",
     "@rollup/plugin-node-resolve": "15.0.1",
     "@rollup/plugin-typescript": "10.0.1",
     "@tsconfig/svelte": "3.0.0",
