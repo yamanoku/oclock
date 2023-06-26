@@ -1,4 +1,4 @@
-<svelte:options tag="seconds-component" />
+<svelte:options customElement="seconds-component" />
 
 <script lang="ts">
   import { onMount } from "svelte";
