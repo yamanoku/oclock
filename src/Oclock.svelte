@@ -1,4 +1,4 @@
-<svelte:options tag="oclock-component" />
+<svelte:options customElement="oclock-component" />
 
 <script lang="ts">
   import { onMount } from "svelte";
