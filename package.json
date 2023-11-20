@@ -14,7 +14,7 @@
     "@rollup/plugin-node-resolve": "15.2.3",
     "@rollup/plugin-typescript": "11.1.5",
     "@tsconfig/svelte": "5.0.2",
-    "gh-pages": "6.0.0",
+    "gh-pages": "6.1.0",
     "rollup": "4.4.1",
     "rollup-plugin-css-only": "4.5.2",
     "rollup-plugin-livereload": "2.0.5",
