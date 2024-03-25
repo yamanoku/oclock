@@ -2,31 +2,22 @@
   "name": "oclock",
   "author": "yamanoku <0910yama@gmail.com>",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
-    "validate": "svelte-check",
-    "deploy": "gh-pages -d public -b gh-pages -m 'chore: deploy' -t"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "gh-pages -d dist -b gh-pages -m 'chore: deploy' -t"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "25.0.7",
-    "@rollup/plugin-node-resolve": "15.2.3",
-    "@rollup/plugin-typescript": "11.1.6",
+    "@sveltejs/vite-plugin-svelte": "3.0.2",
     "@tsconfig/svelte": "5.0.3",
     "gh-pages": "6.1.1",
-    "rollup": "4.13.0",
-    "rollup-plugin-css-only": "4.5.2",
-    "rollup-plugin-livereload": "2.0.5",
-    "rollup-plugin-svelte": "7.2.0",
-    "@rollup/plugin-terser": "0.4.4",
     "svelte": "4.2.12",
     "svelte-check": "3.6.8",
-    "svelte-preprocess": "5.1.3",
     "tslib": "2.6.2",
-    "typescript": "5.4.3"
-  },
-  "dependencies": {
-    "sirv-cli": "2.0.2"
+    "typescript": "5.4.3",
+    "vite": "5.2.0"
   }
 }
