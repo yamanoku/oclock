@@ -20,7 +20,7 @@ npm ci
 npm run dev
 ```
 
-Navigate to [localhost:3000](http://localhost:3000). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
+Navigate to [localhost:5173](http://localhost:5173). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
 ## Recommended IDE Setup
 
