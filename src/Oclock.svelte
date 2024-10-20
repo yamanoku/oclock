@@ -1,14 +1,13 @@
 <svelte:options customElement="oclock-component" />
 
 <script lang="ts">
-  import { onMount } from "svelte";
-  let time = new Date();
+  let time = $state(new Date());
 
-  $: hours = String(time.getHours()).padStart(2, "0");
-  $: minutes = String(time.getMinutes()).padStart(2, "0");
-  $: seconds = String(time.getSeconds()).padStart(2, "0");
+  let hours = $derived(String(time.getHours()).padStart(2, "0"));
+  let minutes = $derived(String(time.getMinutes()).padStart(2, "0"));
+  let seconds = $derived(String(time.getSeconds()).padStart(2, "0"));
 
-  onMount(() => {
+  $effect(() => {
     const interval = setInterval(() => {
       time = new Date();
     }, 1000);

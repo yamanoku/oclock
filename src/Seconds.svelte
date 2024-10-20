@@ -1,12 +1,11 @@
 <svelte:options customElement="seconds-component" />
 
 <script lang="ts">
-  import { onMount } from "svelte";
-  let time = new Date();
+  let time = $state(new Date());
 
-  $: seconds = String(time.getSeconds()).padStart(2, "0");
+  let seconds = $derived(String(time.getSeconds()).padStart(2, "0"));
 
-  onMount(() => {
+  $effect(() => {
     const interval = setInterval(() => {
       time = new Date();
     }, 1000);
