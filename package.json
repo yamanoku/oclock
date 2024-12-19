@@ -11,7 +11,7 @@
     "deploy": "gh-pages -d dist -b gh-pages -m 'chore: deploy' -t"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "5.0.2",
+    "@sveltejs/vite-plugin-svelte": "5.0.3",
     "@tsconfig/svelte": "5.0.4",
     "gh-pages": "6.2.0",
     "svelte": "5.14.3",
