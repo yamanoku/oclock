@@ -1,7 +1,8 @@
 {
   "extends": [
     "config:base",
-    "group:monorepos"
+    "group:monorepos",
+    "helpers:pinGitHubActionDigests"
   ],
   "labels": ["dependencies"],
   "dependencyDashboard": false,
