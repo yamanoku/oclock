@@ -14,7 +14,7 @@
     "@sveltejs/vite-plugin-svelte": "5.1.0",
     "@tsconfig/svelte": "5.0.4",
     "gh-pages": "6.3.0",
-    "svelte": "5.33.18",
+    "svelte": "5.33.19",
     "svelte-check": "4.2.1",
     "tslib": "2.8.1",
     "typescript": "5.8.3",
