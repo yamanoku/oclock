@@ -3,6 +3,9 @@ import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
@@ -18,5 +21,5 @@ export default defineConfig({
     compilerOptions: {
       customElement: true,
     },
-  })],
+  }), cloudflare()],
 })

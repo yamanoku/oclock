@@ -6,16 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "validate": "svelte-check --tsconfig ./tsconfig.json"
+    "preview": "npm run build && wrangler dev",
+    "validate": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.40.2",
     "@sveltejs/vite-plugin-svelte": "7.1.2",
     "@tsconfig/svelte": "5.0.8",
     "svelte": "5.56.3",
     "svelte-check": "4.6.0",
     "tslib": "2.8.1",
     "typescript": "6.0.3",
-    "vite": "8.0.16"
+    "vite": "8.0.16",
+    "wrangler": "^4.100.0"
   }
 }
