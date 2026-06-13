@@ -10,8 +10,8 @@ This is a project template for [Svelte](https://svelte.dev) apps. It lives at ht
 
 ## Contents
 
-- [O'clock App](https://yamanoku.net/oclock/)
-- [Seconds Only Version](https://yamanoku.net/oclock/seconds.html)
+- [O'clock App](https://oclock.yamanoku.net/)
+- [Seconds Only Version](https://oclock.yamanoku.net/seconds)
 
 ## Get started
 
