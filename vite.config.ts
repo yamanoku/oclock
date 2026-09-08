@@ -12,8 +12,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'index.html'),
-        seconds: resolve(__dirname, 'seconds.html')
+        index: resolve(import.meta.dirname, 'index.html'),
+        seconds: resolve(import.meta.dirname, 'seconds.html')
       },
     },
   },
