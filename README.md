@@ -22,6 +22,8 @@ npm run dev
 
 Navigate to [localhost:5173](http://localhost:5173). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
 
+This app is a Progressive Web App (PWA) via [`vite-plugin-pwa`](https://vite-pwa-org.netlify.app/). After `npm run build` (or in `npm run dev`), the browser can install it and use it offline.
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
