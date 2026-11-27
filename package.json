@@ -18,7 +18,7 @@
     "svelte": "5.59.2",
     "svelte-check": "4.7.8",
     "tslib": "2.9.1",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vite": "8.4.0",
     "wrangler": "^4.100.0"
   }
